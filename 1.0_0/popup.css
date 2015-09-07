@@ -1,0 +1,229 @@
+/*some class styles are inspired from Simple Window Saver*/
+/*some class styles are inspired from Chrome Browser itself*/
+
+/*PSEUDO ELEMENTS*/
+/*http://css-tricks.com/custom-scrollbars-in-webkit/*/
+/*http://css-tricks.com/examples/WebKitScrollbars/*/
+::-webkit-scrollbar {
+	/*background: #8CB5F5;/**/
+}
+
+/*ELEMENTS*/
+
+* {
+	margin: 0;/**/
+	overflow: hidden;/**/
+	padding: 0;/**/
+	white-space: nowrap;/**/
+}
+
+body {
+	font-family: "Helvetica", "sans-serif";
+	font-size: 120%;
+	/*height: auto;/**//*3000px fixes disappearing scroll bar... use $('body').height($('body').height()+5) in js instead*/
+	width: auto; /*auto, scroll*/
+}
+
+input {
+	border: 3px solid #ccc;
+	border-radius: 5px;
+	font-size: 100%;
+	font-weight: bold;
+	padding: 3px;
+}
+
+input:focus {
+	outline: none;
+}
+
+li {
+	border-radius: 10px;
+	color: blue;
+	list-style: none;
+	margin: 10px 5px;
+	padding: 5px 10px;
+}
+
+li:hover {
+	background-color: #eee;
+	cursor: pointer;
+}
+
+li:hover > .delete {
+	visibility: visible; /*makes delete visible on hovering on li*/
+}
+
+/*CLASSES, TAGS*/
+
+.closed {
+	color: black;
+}
+
+.current {
+	background-color: #ff9;
+	color: black;
+}
+
+.current:hover {
+	cursor: default;
+}
+
+.delete {
+	background-color: #fcc;
+	border-radius: 10px;
+	color: white;
+	display: inline; /*inline, inline-block*/
+	float: right;/*right*/
+	font-weight: bold;
+	height: 20px;
+	line-height: 16px;
+	margin-left: 0px; /*-10 to avoid going over to next line?*/
+	position: relative;/*relative, not auto, any other will behave strange*/ /*static|absolute|fixed|relative|initial|inherit*/
+	text-align: center;
+	top: 1px;
+	visibility: hidden;
+	width: 20px;
+}
+
+.delete:hover {
+	background-color: #f66;
+	cursor: pointer;
+}
+
+.deleted, .deleted:hover {
+	background-color: #fcc;
+	color: black;
+}
+
+.deleted > .delete {
+	display: none;
+}
+
+.deleted > .text:hover {
+	cursor: default;
+}
+
+.deleted > .undelete {
+	display: inline;
+}
+
+.emptySpace {
+	display: inline;
+	white-space: pre;
+}
+
+.open {
+	color: green;	/*grey, green*/
+}
+
+.popupMenuButton {
+	-moz-box-shadow: inset 0px 1px 0px 0px #bbdaf7;
+	-webkit-box-shadow: inset 0px 1px 0px 0px #bbdaf7;
+	box-shadow: inset 0px 1px 0px 0px #bbdaf7;
+	background: -webkit-gradient( linear, left top, left bottom, color-stop(0.05, #C8E3FF), color-stop(1, #33FFAD) );
+	background: -moz-linear-gradient( center top, #79bbff 5%, #3c82c9 100% );
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#79bbff', endColorstr='#3c82c9');
+	background-color: #79bbff;
+	-webkit-border-top-left-radius: 11px;
+	-moz-border-radius-topleft: 11px;
+	border-top-left-radius: 11px;
+	-webkit-border-top-right-radius: 11px;
+	-moz-border-radius-topright: 11px;
+	border-top-right-radius: 11px;
+	-webkit-border-bottom-right-radius: 11px;
+	-moz-border-radius-bottomright: 11px;
+	border-bottom-right-radius: 11px;
+	-webkit-border-bottom-left-radius: 11px;
+	-moz-border-radius-bottomleft: 11px;
+	border-bottom-left-radius: 11px;
+	text-indent: 0px;
+	border: 1px solid #84bbf3;
+	display: inline-block;
+	/*color:#ffffff;*/	/*text color; ffffff is white*/
+	font-family: Arial;
+	font-size: 16px;
+	font-weight: bold;
+	font-style: normal;
+	height: 33px;
+	line-height: 33px;
+	padding-left: 10px;
+	padding-right: 10px;
+	width: auto;
+	text-decoration: none;
+	text-align: center;
+	/*text-shadow:1px 1px 0px #528ecc;*/
+}
+
+.popupMenuButton:hover {
+	background: -webkit-gradient( linear, left top, left bottom, color-stop(0.05, #FF944D), color-stop(1, #FF66A3) );
+	/*background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #3c82c9), color-stop(1, #79bbff) );*/
+	/*background:-moz-linear-gradient( center top, #3c82c9 5%, #79bbff 100% );*/
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#3c82c9', endColorstr='#79bbff');
+	background-color: #3c82c9;
+	cursor: pointer;
+}
+
+.popupMenuButton:active {
+	position: relative;
+	top: 1px;
+}
+
+.star:hover {
+	cursor: pointer;
+}
+.star.grey {
+	background-color: none;
+	/*src: url('\pics\Star-16.png'); /*does not work*/
+	opacity: .5;
+}
+
+.star.yellow {
+	background: url('\pics\\star16.png') no-repeat; /*can't get it working*/
+	background-color: none;
+	/*src: url('\pics\star16.png'); /*does not work*/
+	opacity: 1;
+}
+
+.tabnums {
+	border-radius: 10px;
+	white-space: pre; /*display white spaces*/
+}
+
+.text {
+	display: inline;
+}
+
+.text:hover {
+	cursor: pointer;
+}
+
+.undelete {
+	color: blue;
+	display: none;
+	float: right;
+	margin-left: 20px;
+}
+
+.undelete:hover {
+	cursor: pointer;
+}
+
+/*IDS*/
+
+#managerLi {
+	font-size: 90%;
+}
+
+#namedWindowTemplate {
+	display: none;	/*none for production*/
+}
+
+#popupMenu {
+	display: block;
+}
+
+#saveWindowForm {
+	display: none;
+	margin: 5px;
+	padding: 5px 10px;
+}

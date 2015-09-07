@@ -1,0 +1,22 @@
+{
+   "background": {
+      "page": "background.html"
+   },
+   "browser_action": {
+      "default_icon": "pics/workspaces32.png",
+      "default_popup": "popup.html",
+      "default_title": "Chrome Workspaces"
+   },
+   "description": "Easy to use tabs and windows session manager. Name a window and manage and stash tabs to said window. Compartmentalize your tabs.
+           This is an improvement on coderlau's TabStorage extension. 
+           https://chrome.google.com/webstore/detail/tabstorage-session-manage/dmbmofeiofgpodbinbaikmomdiaefmjp?utm_source=chrome-ntp-icon ",
+   "icons": {
+      "128": "pics/workspaces128.png",
+      "48": "pics/workspaces48.png"
+   },
+   "manifest_version": 2,
+   "name": "Chrome Workspaces",
+   "options_page": "options.html",
+   "permissions": [ "bookmarks", "storage", "tabs", "unlimitedStorage", "ftp://*/*", "http://*/*", "https://*/*" ],
+   "version": "1.0.0"
+}

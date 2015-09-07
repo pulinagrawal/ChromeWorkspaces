@@ -1,0 +1,143 @@
+/*ELEMENTS*/
+a:-webkit-any-link {
+	color: black;	/*#3397E8 or #0D80DE or #234567++ or 305E85++ or blue+++ or black*/
+	cursor: pointer
+}
+body {
+	background-color: white; /*#E8E4F2, white++*/
+	font-size: 1.0em;
+}
+
+/*CLASSES, TAGS*/
+.deleteButton {
+	background: -webkit-gradient( linear, left top, left bottom, color-stop(0.05, #ffc477), color-stop(1, #FF0F47) );
+	background: -moz-linear-gradient( center top, #ffc477 5%, #fb9e25 100% );
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffc477', endColorstr='#fb9e25');
+	background-color: #ffc477;
+	-webkit-border-top-left-radius: 15px;
+	-moz-border-radius-topleft: 15px;
+	border-top-left-radius: 15px;
+	-webkit-border-top-right-radius: 15px;
+	-moz-border-radius-topright: 15px;
+	border-top-right-radius: 15px;
+	-webkit-border-bottom-right-radius: 15px;
+	-moz-border-radius-bottomright: 15px;
+	border-bottom-right-radius: 15px;
+	-webkit-border-bottom-left-radius: 15px;
+	-moz-border-radius-bottomleft: 15px;
+	border-bottom-left-radius: 15px;
+	text-indent: 0;
+	border: 1px solid #eeb44f;
+	display: inline-block;
+	color: #ffffff;
+	font-family: Arial;
+	font-size: 15px;
+	font-weight: bold;
+	font-style: normal;
+	height: 16px;
+	line-height: 20px;
+	opacity: 0.2;
+	position: relative;
+	left: 0px;
+	top: -2px;
+	width: 16px;
+	text-decoration: none;
+	text-align: center;
+	visibility: hidden;
+}
+
+.deleteButton:hover {
+	background: -webkit-gradient( linear, left top, left bottom, color-stop(0.05, #FF0F47), color-stop(1, #ffc477) );
+	background: -moz-linear-gradient( center top, #FF0F47 5%, #ffc477 100% );
+	cursor: pointer;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fb9e25', endColorstr='#ffc477');
+	background-color: #fb9e25;
+	opacity: 1;
+}
+
+.deleteButton:active {
+	position: relative;
+	top: 1px;
+}
+
+.favicon {
+	position: relative;
+	left: 8px;
+	top: 0px;
+	height: 18px;
+	width: 18px;
+}
+
+.tabLinkDiv {
+	display: inline-block;
+	line-height: 25px;
+}
+
+.tabLinkDiv:hover > .deleteButton {
+	visibility: visible; /*makes delete visible on hovering on li*/
+}
+
+.tabTitle {
+	position: relative;
+	left: 13px;
+	top: 0px;
+}
+
+.tabTitle:hover {
+	cursor: pointer;
+}
+
+.tabTime {
+	display: none;
+	font-size: 0.8em;
+	position: relative;
+	left: 35px;
+}
+
+.timeLineDiv {
+	font-size: 0.5em;
+	font-style: oblique;	/*normal,italic oblique*/
+	position: relative;
+	left: 10em;
+	opacity: 0.5;
+	padding-top: 1em;
+	padding-bottom: 0.5em;
+}
+
+.timeLineTime {
+	position: relative;
+	left: 3em;
+}
+
+/*IDS*/
+
+#tabLinkTemplate {
+	display: none;
+}
+
+#timeLineTemplate {
+	display: none;
+}
+
+#topDiv {
+	border-bottom-width: 1px;
+	border-bottom-style: dashed;
+	border-bottom-color: rgb(221, 221, 221);
+	color: rgb(119, 119, 119);
+	font-weight: 300;
+	font-size: 18px;
+	margin-bottom: 10px;
+	padding-top: 40px;
+	padding-bottom: 40px;
+	padding-left: 100px;
+}
+
+#totalNumberOfStoredTabsDiv {
+	font-weight: 300;
+	font-size: 18px;
+	line-height: 0em;
+	margin-bottom: 1px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 10px;
+}

@@ -1,0 +1,25 @@
+/*some class styles are inspired from Simple Window Saver*/
+/*some class styles are inspired from Chrome Browser itself*/
+
+/*PSEUDO ELEMENTS*/
+/*http://css-tricks.com/custom-scrollbars-in-webkit/*/
+/*http://css-tricks.com/examples/WebKitScrollbars/*/
+::-webkit-scrollbar {
+	/*background: #8CB5F5;/**/
+}
+
+/*ELEMENTS*/
+
+* {
+	margin: 0;/**/
+	overflow: hidden;/**/
+	padding: 0;/**/
+	white-space: nowrap;/**/
+}
+
+body {
+	font-family: "Helvetica", "sans-serif";
+	font-size: 120%;
+	/*height: auto;/**//*3000px fixes disappearing scroll bar... use $('body').height($('body').height()+5) in js instead*/
+	width: auto; /*auto, scroll*/
+}

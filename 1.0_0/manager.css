@@ -1,0 +1,268 @@
+__ELEMENTS {
+}
+
+* {
+	/*--size--*/
+	box-sizing: border-box;	/*size includes borders and paddings*/
+	height: 100%;
+	width: 100%;
+	/*--trimmings--*/
+	border: 0px;
+	margin: 0px;
+	padding: 0px;
+}
+
+body, html {
+	cursor: default;
+	font-family: Arial, sans-serif; /*sets font of all descendants*/
+	overflow: hidden;
+	white-space: nowrap;
+}
+
+div {
+	display: block;
+}
+
+__ScrollBar {
+}
+
+::-webkit-scrollbar {
+	width: 10px;
+	height: 10px;
+	padding-top: 40px;
+}
+
+::-webkit-scrollbar-track {
+	-webkit-box-shadow: inset 0 0 1px rgba(0,0,0,0.3);
+	border: 1px solid black;
+	background: rgb(41,41,41);
+	border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+	border-radius: 10px;
+	height: 30px;
+	width: 8px;
+	border: 1px solid black;
+	background: rgb(111,111,111);
+	-webkit-box-shadow: 0 1px 1px rgb(0,0,0);
+	background: -webkit-linear-gradient(rgb(200,200,200), rgb(150,150,150));
+}
+
+::-webkit-scrollbar-track-piece {
+	height: 30px;
+	width: 30px;
+}
+
+__MainDivs {
+}
+#main {
+	background-color: black; /**/
+}
+
+#div1 {
+	background-color: white;/**/
+	height: 20px;
+}
+
+#div2 {
+	background-color: #EBEFF9;
+	border-top: 1px solid #9CC2EF;
+	height: 20px;
+}
+
+#div3 {
+	background-color: red;/**/
+	overflow: visible;
+}
+
+#div4 {
+	background-color: #EBEFF9;
+	border-bottom: 1px solid #9CC2EF; /*line at bottom*/
+	height: 20px;
+}
+
+#div5 {
+	background-color: white; /*so that it is NOT transparent and you can't see into div3's contents*/
+	height: 20px;
+}
+
+__SubDivs {
+}
+#div3treeContainer {
+	background-color: #EBEFF9;
+	overflow: auto;	/*do not hide child elements...*/
+}
+
+#div3splitter {
+	background-color: #DAEFFF;/*#EBEFF9 is used in chrome bookmark manager*/
+	cursor: e-resize;
+	left: 30%; /*initial position*/
+	width: 5px;
+}
+
+#div3listContainer {
+	background-color: #EBEFF9;
+	overflow: auto;	/*do not hide child elements...*/
+}
+
+#div3tree {/*folders tree*/
+	background-color: #EBEFF9;
+	overflow: visible;/*overflows into div3treeContainer*/
+	width: 50%;/*just so that it can be seen in debug mode*/
+}
+
+#div3list {/* bookmarks list */
+	background-color: #EBEFF9;
+	overflow: visible;/*overflows into div3treeContainer*/
+	width: 50%;/*just so that it can be seen in debug mode*/
+}
+
+__Columns {
+}
+.column {
+	background-color: green;
+	display: inline-block;/*so that the columns line up like columns*/
+	overflow-x: hidden;
+	overflow-y: hidden;
+	height: auto; /*set to auto*/
+	width: 500px; /*set to auto*/
+	min-width: 20px;/**/
+}
+
+.headerClass {
+	background-color: #A7EBA7;/*#A7EBA7 = very light green*/
+	font-size: 15;
+	line-height: 30px; /*height of a line of text*/
+	height: auto;
+	width: auto;/**/
+}
+.headerClass:hover {
+	background-color: hsla(128, 70%, 99%, .2);
+	outline-color: red;
+	outline-style: solid;
+}
+.resizerClass {
+	background-color: #EBEFF9;
+	/*background-color: hsla(128, 70%, 99%, .9);/**/
+	cursor: e-resize;
+	height: 20px;
+	width: 5px;
+}
+
+__Items {
+}
+.item {
+	background-color: purple;/**/
+	font-size: 20;
+	line-height: 20px; /*height of a line of text*/
+	height: auto;/**/
+	width: auto;/**/
+	white-space: pre; /*so that empty strings show up and is not collapsed*/
+}
+
+.item.tree.winOpen {
+	background-color: #DADDFF; /*a very light blue*/
+}
+
+.item.tree.winClosed {
+	background-color: #F0D58B; /*a very light orange*/
+}
+
+.item.tree.folderOpen {
+	background-color: #B278FA; /*light purple*/
+	color: #302C8F; /*#181654=very dark blue, #302C8F= dark blue*/
+	/*font-size: 150%;*/
+	font-weight: 900;
+	/*line-height: 120%;*/
+}
+
+.item.tree.folderOpen.winOpen {
+	background-color: #BFC1F5; /*a light blue*/
+}
+
+.item.tree.folderOpen.winClosed {
+	background-color: #F0C44A; /*a light orange*/
+}
+
+.item.open {
+	background-color: #DADDFF; /*a very light blue*/
+}
+
+.item.stored {
+	background-color: #F0D58B; /*hsla(273, 100%, 89%, 0.86)=light purple*/
+}
+
+.item.list.selected {/*has to be after item.stored to override*/
+	background-color: hsla(214, 91%, 85%, .8); /*light purple*/
+}
+
+.item.hover, .hover {/*droppable hoverClass*/
+	background-color: hsla(214, 91%, 85%, .5) !important;/*hsla(214, 91%, 85%, .5)=light transparent green;*/
+	/*border: 1px solid hsl(214, 91%, 85%);/**/
+	/*border-radius: 3px;/**/
+}
+
+.item:hover {/*must be last?? to overwrite the above codes and be SEEN?; cannot overwrite more specific css*/
+	background-color: hsla(214, 91%, 85%, .9) !important; /*hsla(214, 91%, 85%, .9)=transparent sky blue*/
+	/*background-color: #D8BCF5;*/
+	/*background-color: hsla(114, 21%, 80%, .2);/**/
+	outline-color: white;
+	outline-style: solid;
+}
+__ContextMenu {/*from jQuery Context Menu Demo*/
+
+}
+ul {/* context menu items */
+	list-style-type: none;
+	list-style-position: inside;
+	margin: 0;
+	padding: 0;
+	height: auto; /*because was set to 100% in'*'*/
+	width: auto;
+}
+.context-menu {
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	background-color: #f2f2f2;
+	border: 1px solid #999;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+.context-menu a {
+	display: block;
+	padding: 3px;
+	text-decoration: none;
+	color: #333;
+}
+.context-menu a:hover {
+	background-color: #666;
+	color: white;
+}
+
+__Drop {
+}
+
+#dropOverlay.dropHighLight {/*semi-transparent blue overlay box on element, drop target...*/
+	background-color: hsla(214, 91%, 85%, .5);
+	border: 1px solid hsl(214, 91%, 85%);
+	border-radius: 3px;
+	display: none;
+	pointer-events: none; /*The element is never the target of mouse events; become transparent to clicks*/
+	position: absolute;
+	overflow: hidden;
+	/*z-index: -1;*/
+}
+
+#dropOverlay.line {/*black line*/
+	border: 3px solid black;
+	border-top-color: transparent;
+	border-bottom-color: transparent;
+	background-color: black;
+	background-clip: padding-box;
+	height: 8px;
+	border-radius: 0;
+	display: none;
+	z-index: 10;
+}

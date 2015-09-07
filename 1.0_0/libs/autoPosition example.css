@@ -1,0 +1,65 @@
+* {
+	box-sizing: border-box;
+	border: 0;
+	margin: 0;
+	padding: 0;
+}
+
+div {
+	position: absolute;
+}
+
+#main {
+	background-color: black;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+}
+
+#div1 {
+	background-color: red;
+	height: 10%;
+	width: 800;
+}
+
+#div2 {
+	background-color: orange;
+	height: 10%;
+	width: 500;
+}
+
+#div3 {
+	background-color: yellow;
+	height: 60%;
+	width: 100%;
+}
+
+#div3left {
+	background-color: green;
+	height: 100%;
+	width: 500px;
+}
+#div3splitter {
+	background-color: cyan;
+	cursor: e-resize;
+	left: 500px;/**/
+	height: 100%;
+	width: 100px;
+}
+#div3right {
+	background-color: blue;
+	height: 100%;
+	width: 50%;
+}
+
+#div4 {
+	background-color: purple;
+	height: 10%;
+	width: 100%;
+}
+#div5 {
+	background-color: violet;
+	height: 9.5%; /*a little leeway for roundoff errors; sometimes total returned or setted by .offset() and .width() and .height() may be rounded up*/
+	width: 100%;
+}

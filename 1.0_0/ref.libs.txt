@@ -1,0 +1,17 @@
+
+
+LZW library
+///////////////////////
+LZW.compress(string)
+LZW.decompress(array)
+
+
+
+
+
+Stanford Javascript Crypto Library
+/////////////////////////
+SJCL is easy to use: simply run
+sjcl.encrypt("password", "data")
+to encrypt data, or
+sjcl.decrypt("password", "encrypted-data")

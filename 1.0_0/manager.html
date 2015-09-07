@@ -1,0 +1,71 @@
+<html>
+	<head>
+		<script type="text/javascript" src="consolelog.js"></script>
+		<link id="style" rel="stylesheet" type="text/css" href="manager.css" />
+		<script src="ga.js"></script>
+		<script type="text/javascript" src="libs/jquery-1.8.3.js"></script>
+		<script type="text/javascript" src="libs/jquery-ui-1.9.2.custom.min.js"></script>
+		<script type="text/javascript" src="libs/jquery.autoPosition.js"></script>
+		<script type="text/javascript" src="libs/cjson.js"></script>
+		<script type="text/javascript" src="libs/compressString.js"></script>
+		<script type="text/javascript" src="libs/jquery.contextMenu.js"></script>
+	</head>
+
+	<title>Tabs Explorer</title>
+
+	<body>
+		<div id="main">
+			<div id="div1">
+				TabStorage Tabs and Sessions Manager. You can name a window and manage and stash tabs to that named window. Compartmentalize all your tabs into categories. Eg, Cartoons, Games, Work. 
+			</div>
+
+			<div id ="div2">
+				
+			</div>
+
+			<div id ="div3">
+				<div id="div3treeContainer">
+					<!--so that children objects are 'on their own page'-->
+					<div id="div3tree" >
+						<div id = "div3treeCol0Div" class = 'tree column'></div>
+						<div id = "div3treeCol1Div" class = 'tree column'></div>
+						<div id = "div3treeCol2Div" class = 'tree column'></div>
+						<div id = "div3treeCol3Div" class = 'tree column'></div>
+						<div id = "div3treeCol4Div" class = 'tree column'></div>
+						<div id = "div3treeCol5Div" class = 'tree column'></div>
+					</div>
+				</div>
+
+				<div id="div3splitter"></div>
+
+				<div id="div3listContainer">
+					<div id="div3list">
+						<div id = "div3listCol0Div" class = 'list column'></div>
+						<div id = "div3listCol1Div" class = 'list column'></div>
+						<div id = "div3listCol2Div" class = 'list column'></div>
+						<div id = "div3listCol3Div" class = 'list column'></div>
+						<div id = "div3listCol4Div" class = 'list column'></div>
+						<div id = "div3listCol5Div" class = 'list column'></div>
+						<div id = "div3listCol6Div" class = 'list column'></div>
+					</div>
+				</div>
+
+				<div id ="div4">
+					Right Click Names and Titles for Options
+					<div id=dropOverlay class='dropHighLight'>
+						drop-overlay
+					</div>
+				</div>
+
+				<div id ="div5">
+					Get my other extension <a href='https://chrome.google.com/webstore/detail/click-and-save/dbkmjjclgbiooljcegcddagnddjedmed?hl=en'>Click and Save</a>. Sorry, hostname currently only works with The Great Suspender tab suspender. 
+					<div id=dropOverlay class="line">
+						drop-overlay line
+					</div>
+				</div>
+			</div>
+	</body>
+
+</html>
+
+<script type="text/javascript" src="manager.js"></script>

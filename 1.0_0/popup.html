@@ -1,0 +1,57 @@
+<html>
+	<head>
+		<script type="text/javascript" src="consolelog.js"></script>
+		<link id="style" rel="stylesheet" type="text/css" href="bootstrap.min.css" />
+        <link id="style" rel="stylesheet" type="text/css" href="popup.css" />
+		<script src="ga.js"></script>
+		<script type="text/javascript" src="libs/jquery-1.8.3.js"></script>
+		<script type="text/javascript" src="libs/jquery-ui-1.9.2.custom.min.js"></script>
+		<script type="text/javascript" src="libs/cjson.js"></script>
+		<script type="text/javascript" src="libs/compressString.js"></script>
+        <style type="text/css">
+            body {
+                width: 400px;
+                overflow: hidden;
+            }
+        </style>
+	</head>
+
+	<body>
+        <br>
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12"> 
+                    <div class="btn-group btn-group-sm" role="group">
+			            <a class="btn btn-default btn-warning btn-block" id="managerButton" title="explorer like interface for the management of subject windows and tabs">Explorer</a>
+                    </div>
+                    <div class="btn-group btn-group-sm" role="group">
+			            <a class="btn btn-default btn-success btn-block" id="tabsButton" title='list of stored tabs for this Window'>Storage</a>
+                    </div>
+                    <div class="btn-group btn-group-sm" role="group">
+			            <a class="btn btn-default btn-danger btn-block" id="storeTabsButton" title='put all tabs into storge to clear up the tabs list'>Stash</a>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+		            <form id="saveWindowForm">
+			            <input type="text" placeholder="Name this window" class="form-control" id="saveWindowInput" name = "name"/>
+		            </form>
+                </div>
+            </div>
+		                <ul id="namedWindowsList" class="list-group">
+                                <li id="namedWindowTemplate" class="list-group-item active"> 
+				                <span class="text list-group-item-text">text</span>
+				                <img class="grey star" src="\pics\new.png" title='star to auto open on chrome startup'></img>
+				                <span class="tabnums badge">tabnums</span>			
+				                <a class="delete btn btn-danger btn-xs" title='delete the stored data for this window; will not close the window'>x</a><!--x or &times-->
+				                <a class="undelete btn btn-success btn-xs">Restore</a>
+			                </li>
+		                </ul>
+        </div>
+	</body>
+
+</html>
+
+<script type="text/javascript" src="popup.js"></script>
+

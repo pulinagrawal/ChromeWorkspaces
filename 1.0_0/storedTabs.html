@@ -1,0 +1,45 @@
+<html>
+	<head>
+		<script type="text/javascript" src="consolelog.js"></script>
+		<link id="style" rel="stylesheet" type="text/css" href="storedTabs.css" />
+		<script src="ga.js"></script>
+		<script type="text/javascript" src="libs/jquery-1.8.3.js"></script>
+		<script type="text/javascript" src="libs/jquery-ui-1.9.2.custom.min.js"></script>
+		<script type="text/javascript" src="libs/jquery.autoPosition.js"></script>
+		<script type="text/javascript" src="libs/cjson.js"></script>
+		<script type="text/javascript" src="libs/compressString.js"></script>
+		<script type="text/javascript" src="libs/jquery.contextMenu.js"></script>
+	</head>
+
+	<title> Stored Tabs </title>
+
+	<body>
+		<div id="topDiv">
+			Have a great day :-) <!--place holder for ad-->
+		</div>
+
+		<div id='tabGroupTemplate' class='tabGroupDiv'>
+
+		</div>
+
+		<div id='totalNumberOfStoredTabsDiv'>
+			<span id='totalNumberOfStoredTabs'>totalNumberOfStoredTabs</span>
+		</div>
+
+		<div id ="timeLineTemplate" class ='timeLineDiv'>
+			<span id='numberOfTabsInGroup'></span>
+			<span id='timeLineTime' class = 'timeLineTime'></span>
+		</div>
+
+		<li id="tabLinkTemplate" class='tabLinkDiv'>
+			<span class="deleteButton">X</span>
+			<img class = 'favicon' src = "http://www.google.com"></img>
+			<a href ='javascript: void(0)' style="text-decoration:none"><span class="tabTitle">tabTitle</span></a>
+			<span class="tabTime">tabTime</span>
+		</li>
+
+	</body>
+
+</html>
+
+<script type="text/javascript" src="storedTabs.js"></script>
