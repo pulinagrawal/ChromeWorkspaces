@@ -8,10 +8,17 @@ This is an user interface improvement on the TabStorage extension by coderlau (h
 To Install:
 
 Go to Code -> Download ZIP
+
 Extract contents from ZIP
+
 In Chrome go to Extensions.
+
 Turn on Developer Mode
+
 Click on "Load Unpacked"
+
 Browse to extacted ZIP contents
+
 Select the folder named 1.0_0.
+
 Done
