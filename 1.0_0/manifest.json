@@ -1,8 +1,9 @@
+// Manifest V3
 {
    "background": {
       "page": "background.html"
    },
-   "browser_action": {
+   "action": {
       "default_icon": "pics/workspaces32.png",
       "default_popup": "popup.html",
       "default_title": "Chrome Workspaces"
@@ -14,9 +15,10 @@
       "128": "pics/workspaces128.png",
       "48": "pics/workspaces48.png"
    },
-   "manifest_version": 2,
+   "manifest_version": 3,
    "name": "Chrome Workspaces",
    "options_page": "options.html",
    "permissions": [ "bookmarks", "storage", "tabs", "unlimitedStorage", "ftp://*/*", "http://*/*", "https://*/*" ],
-   "version": "1.0.0"
+   "host_permissions": ["https://*/"],
+   "version": "1.0.1"
 }
