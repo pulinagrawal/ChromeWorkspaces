@@ -15,6 +15,6 @@
    "manifest_version": 3,
    "name": "Chrome Workspaces",
    "options_page": "options.html",
-   "permissions": [ "bookmarks", "storage", "tabs", "unlimitedStorage", "ftp://*/*", "http://*/*", "https://*/*" ],
+   "permissions": [ "storage", "tabs", "unlimitedStorage", "ftp://*/*", "http://*/*", "https://*/*" ],
    "version": "1.0.0"
 }
