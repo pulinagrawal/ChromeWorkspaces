@@ -1,6 +1,6 @@
 {
    "background": {
-      "page": "background.html"
+      "service_worker": "background.html"
    },
    "action": {
       "default_icon": "pics/workspaces32.png",
