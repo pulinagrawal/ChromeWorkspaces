@@ -1,4 +1,3 @@
-// Manifest V3
 {
    "background": {
       "page": "background.html"
@@ -8,8 +7,8 @@
       "default_popup": "popup.html",
       "default_title": "Chrome Workspaces"
    },
-   "description": "Easy to use tabs and windows session manager. Name a window and manage and stash tabs to said window. Compartmentalize your tabs.
-           This is an improvement on coderlau's TabStorage extension. 
+   "description": "Easy to use tabs and windows session manager. Name a window and manage and stash tabs to said window. Compartmentalize your tabs. \
+           This is an improvement on coderlau's TabStorage extension. \
            https://chrome.google.com/webstore/detail/tabstorage-session-manage/dmbmofeiofgpodbinbaikmomdiaefmjp?utm_source=chrome-ntp-icon ",
    "icons": {
       "128": "pics/workspaces128.png",
