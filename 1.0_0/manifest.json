@@ -20,5 +20,5 @@
    "options_page": "options.html",
    "permissions": [ "bookmarks", "storage", "tabs", "unlimitedStorage", "ftp://*/*", "http://*/*", "https://*/*" ],
    "host_permissions": ["https://*/"],
-   "version": "1.0.1"
+   "version": "1.0.0"
 }
